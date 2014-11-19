@@ -10,4 +10,17 @@ class ChecklistController < ApplicationController
       redirect_to("/")
     end
   end
+
+  def update
+    @checklist = Checklist.find_by_token(params[:id])
+
+    render :json => {
+      :success => @checklist.update(checklist_params)
+    }
+  end
+
+  private
+  def checklist_params
+    params.permit(:list_json)
+  end
 end
