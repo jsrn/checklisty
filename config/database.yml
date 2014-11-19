@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: checklisty_development
+  pool: 5
+  username: checklisty
+  password: checklisty
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: checklisty_test
+  pool: 5
+  username: checklisty
+  password: checklisty
