@@ -35,12 +35,6 @@ function getChecklistJSON() {
 }
 
 function addNewItem() {
-	var currentItem = $("li:focus");
-	//$("<li/>")
-	//	.prop("contenteditable", true)
-	//	.appendTo("#checklist")
-	//	.focus();
-
 	$("<li/>")
 		.prop("contenteditable", true)
 		.insertAfter("li:focus")
