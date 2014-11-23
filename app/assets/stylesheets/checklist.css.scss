@@ -1,6 +1,13 @@
 * { box-sizing: border-box; }
 
 body {
+	background: url("/assets/crossword.png");
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.5em;
+}
+
+#checklist {
+	width: 600px;
+	margin: 50px auto;
+	list-style: lower-roman;
 }

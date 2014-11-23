@@ -19,10 +19,7 @@ function persistChecklist() {
 	$.ajax({
 		type:    "PATCH",
 		url:     "/checklist/" + currentToken,
-		data:    { list_json: checklistJSON },
-		success: function(response) {
-
-		}
+		data:    { list_json: checklistJSON }
 	})
 }
 
