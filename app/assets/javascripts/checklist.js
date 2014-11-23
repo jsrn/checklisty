@@ -63,6 +63,8 @@ function checkDelete() {
 	if (item.text() == "") {
 		console.log(item);
 		item.prev("li").focus();
-		item.remove();
+		if ($("li").length != 1) {
+			item.remove();
+		}
 	}
 }
