@@ -1,6 +1,4 @@
 class ChecklistController < ApplicationController
-  def index;end
-
   def new
     checklist = Checklist.new({ token: SecureRandom.hex })
 
