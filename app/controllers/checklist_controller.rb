@@ -9,6 +9,11 @@ class ChecklistController < ApplicationController
     end
   end
 
+  def show
+    @checklist = Checklist.find_by_token(params[:id])
+    @checklist.list_json ||= "[\"What's the plan, Stan?\"]"
+  end
+
   def update
     @checklist = Checklist.find_by_token(params[:id])
 

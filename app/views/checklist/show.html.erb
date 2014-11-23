@@ -1,6 +1,5 @@
-Showing.
-
 <ul id="checklist">
-	<li>Test</li>
-	<li>Test2</li>
+	<% JSON.parse(@checklist.list_json).each do |item| %>
+	<li contenteditable><%= item %></li>
+	<% end %>
 </ul>
