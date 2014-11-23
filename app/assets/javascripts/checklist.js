@@ -1,5 +1,5 @@
 $(function(){
-	$(document).on("click", "#checklist li", persistChecklist);
+	$(document).on("blur", "#checklist li", persistChecklist);
 
 	$(document).on("keypress", "#checklist li", function(e) {
 		if (e.which == 13) {
